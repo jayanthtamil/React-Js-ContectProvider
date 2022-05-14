@@ -4,3 +4,9 @@ return{
     User:user,
 }
 }
+
+export const RemoveList = (list) =>{
+    return{
+        type:"REMOVE_USER",
+    }
+}

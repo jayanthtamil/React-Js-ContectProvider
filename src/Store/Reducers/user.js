@@ -7,7 +7,11 @@ const usersReducer = (state = initialState, action) => {
     case "ADD_USER":
       return {
         ...state,
-        user: [...state.user, action.users],
+        users: [...state.users, action.User],
+      };
+    case "REMOVE_USER":
+      return {
+        users: [],
       };
     default:
       return state;
